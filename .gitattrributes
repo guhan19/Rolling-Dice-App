@@ -1,0 +1,23 @@
+# --- Hide native code and dependencies ---
+ios/** linguist-vendored
+android/** linguist-vendored
+macos/** linguist-vendored
+windows/** linguist-vendored
+linux/** linguist-vendored
+web/** linguist-vendored
+
+# Hide generated code and build outputs
+.dart_tool/** linguist-generated
+build/** linguist-generated
+pubspec.lock linguist-generated
+
+# Hide C/C++/Obj-C files that may be present
+**/*.cpp linguist-vendored
+**/*.cc linguist-vendored
+**/*.c linguist-vendored
+**/*.h linguist-vendored
+**/*.m linguist-vendored
+**/*.mm linguist-vendored
+
+# Explicitly mark Dart as the main language
+lib/** linguist-language=Dart
